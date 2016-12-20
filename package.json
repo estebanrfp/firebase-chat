@@ -1,37 +1,42 @@
 {
   "name": "firebase-chat",
   "version": "1.0.0",
-  "description": "firebase-chat",
-  "main": "index.js",
+  "description": "Firebase-chat App",
+  "main": "public/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch --colors",
-    "start": "webpack-dev-server --progress --colors"
+    "build": "webpack --colors",
+    "serve": "webpack-dev-server --content-base public/ --colors --progress",
+    "deploy": "webpack -p",
+    "start": "npm run build && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/estebanrfp/firebase-chat.git"
   },
   "keywords": [
-    "firebase-chat",
-    "example",
-    "tutorial"
+    "firebase",
+    "chat"
   ],
-  "author": "Esteban Fuster Pozzi (https://desarrolloactivo.com)",
+  "author": "Esteban Fuster Pozzi <estebanrfp@gmail.com> (https://desarrolloactivo.com)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estebanrfp/firebase-chat/issues"
+  },
+  "homepage": "https://github.com/estebanrfp/firebase-chat#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^6.2.10",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
     "babel-preset-latest": "^6.16.0",
-    "css-loader": "^0.26.1",
-    "eslint": "^3.12.2",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.24.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0",
+    "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
-    "firebase": "^3.6.4",
-    "pug": "^2.0.0-beta6"
+    "firebase": "^3.6.1"
   }
 }
