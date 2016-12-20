@@ -4,7 +4,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  entry: ['./src/index.jsx'],
+  entry: ['./src/index.js'],
   output: {
     filename: 'app.js',
     path: './public',
