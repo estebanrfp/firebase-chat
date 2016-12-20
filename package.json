@@ -1,0 +1,36 @@
+{
+  "name": "firebase-chat",
+  "version": "1.0.0",
+  "description": "firebase-chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch --colors",
+    "start": "webpack-dev-server --progress --colors"
+  },
+  "keywords": [
+    "firebase-chat",
+    "example",
+    "tutorial"
+  ],
+  "author": "Esteban Fuster Pozzi (https://desarrolloactivo.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "pug": "^2.0.0-beta6"
+  }
+}
