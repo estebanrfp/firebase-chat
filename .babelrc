@@ -1,0 +1,7 @@
+{
+  "presets": [
+    "latest",
+    "stage-0"
+  ],
+  "plugins": ["transform-async-to-generator", "syntax-async-functions", "transform-regenerator"]
+}
